@@ -18,6 +18,10 @@ RUN apk update && apk add --no-cache git
 ENV OPENAI_API_KEY=""
 ENV GOOGLE_API_KEY=""
 ENV CODE=""
+ENV DEEPSEEK_API_KEY=""
+ENV CUSTOM MODELS=""
+ENV DEFAULT_MODEL=""
+ENV DEEPSEEK URL=""
 
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
